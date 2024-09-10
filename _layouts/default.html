@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3490dc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <header class="py-12 text-center">
+            <h1 class="text-4xl font-bold text-primary">{{ site.title }}</h1>
+        </header>
+
+        {{ content }}
+
+        <footer class="py-8 text-center text-sm text-gray-600">
+            <p>&copy; 2023 {{ site.title }}. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
