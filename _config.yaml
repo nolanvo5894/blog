@@ -1,0 +1,11 @@
+title: My Personal Blog
+description: A place for my thoughts and ideas
+baseurl: ""
+url: "https://yourusername.github.io"
+github_username: yourusername
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
