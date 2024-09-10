@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="bg-white shadow-md rounded-lg mb-8 overflow-hidden">
+    <div class="p-6">
+        <h2 class="text-2xl font-semibold text-primary mb-2">{{ page.title }}</h2>
+        <p class="text-sm text-gray-600 mb-4">Posted on {{ page.date | date: "%B %d, %Y" }} by {{ page.author }}</p>
+        <div class="prose max-w-none">
+            {{ content }}
+        </div>
+    </div>
+</article>
